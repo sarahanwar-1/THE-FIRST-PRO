@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="myportfolio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+     <nav class="navbar">
+            <ul class="nav-list">
+                <li>
+                    <a href="#welcome-section" class="link">Welcome</a>
+                </li>
+                <li>
+                    <a href="#projects" class="link">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="welcome-section" class="welcome-section">
+            <h1 class="myname">Hey I'm Sarah</h1>
+            <h3>Front-end Developer</h3>
+        </section>
+        <section  id="projects" class="projects-section">
+            <h1 class="projects-section-header">
+                These are my Projects
+            </h1>
+            <div class="progect-grid">
+               <a href=" https://sarahanwar-1.github.io/my_portfolio/" class="a-1" target="_blank"><img src="project-1.png" class="project-img pro-1"></a>
+                <a href="https://sarahanwar-1.github.io/first-form/" class="a-2" target="_blank"><img src="htmlform.png"  class="project-img pro-2" ></a>
+               <a href="https://sarahanwar-1.github.io/todo-list/" class="a-3" target="_blank"><img src="todoimg.png" class="project-img pro-3" ></a>
+            </div>
+        </section>
+    <section  id="contact" class="contact-section">
+            <h1 class="contact-section-header">
+                Let's work together...
+            </h1>
+        <div class="contact-links">
+            <a href="https://github.com/sarahanwar-1" target="_blank" class="btn contact-details">
+                <i class="fab fa-github"></i> GITHUB</a>
+            <a href="https://twitter.com/sususarah47?s=09"target="_blank" class="btn contact-details">
+                <i class="fab fa-X"></i>X</a>
+        </div>
+        <div class="flex_center">
+            <fieldset>
+              <legend class="introduction">Leave a Recommendation</legend>          
+              <input type="text" placeholder="Name (Optional)"> <br/>
+              <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+              <div class="flex_center">
+                <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+              </div>
+            </fieldset>
+          </div>
+    </section>
+        <footer >
+            <p>
+                © Created for  <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
+              </p>
+        </footer>
+    
+</body>
+</html>
